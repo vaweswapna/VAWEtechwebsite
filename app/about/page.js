@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { useState, useRef } from "react";
 import {
   Target,
@@ -207,7 +208,7 @@ export default function About() {
                     <div className="absolute left-0 top-0 bottom-0 w-1 rounded-full" style={{ backgroundColor: 'var(--vawe-teal)' }} />
                     <div className="pl-5">
                       <p className="text-base md:text-lg leading-relaxed font-medium text-neutral-800">
-                        "VAWE Technologies is a global IT company driven by technology pioneers committed to business transformation through excellence, people, and values."
+                        &quot;VAWE Technologies is a global IT company driven by technology pioneers committed to business transformation through excellence, people, and values.&quot;
                       </p>
                     </div>
                   </div>
@@ -224,7 +225,7 @@ export default function About() {
                   <div className="absolute left-0 top-0 bottom-0 w-1 rounded-full" style={{ backgroundColor: 'var(--vawe-teal)' }} />
                   <div className="pl-5">
                     <p className="text-sm leading-relaxed font-medium text-neutral-800">
-                      "VAWE Technologies is a global IT company driven by technology pioneers committed to business transformation through excellence, people, and values."
+                      &quot;VAWE Technologies is a global IT company driven by technology pioneers committed to business transformation through excellence, people, and values.&quot;
                     </p>
                   </div>
                 </div>
@@ -284,7 +285,7 @@ export default function About() {
                     WebkitMaskImage: 'radial-gradient(circle, black 60%, transparent 100%)',
                   }}
                 >
-                  <img
+                  <image
                     src="/img1.jpg"
                     alt="Company leadership"
                     className="absolute inset-0 h-full w-full object-cover"
@@ -744,7 +745,7 @@ export default function About() {
                           
                           {/* Image Wrapper */}
                           <div className="relative w-full h-full rounded-full overflow-hidden ring-2 md:ring-3 ring-white shadow-xl">
-                            <img
+                            <Image
                               src={m.photo}
                               alt={`${m.name} photo`}
                               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
